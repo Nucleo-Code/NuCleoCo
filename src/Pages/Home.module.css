@@ -1,0 +1,110 @@
+.main {
+  padding: 0 2.4rem 10rem;
+  background: url("../assets/home/bg-pattern-footer.svg") no-repeat 50% 107% /
+      120.2rem,
+    linear-gradient(transparent 56%, var(--fourth-color) 56%);
+
+  max-width: 144rem;
+  margin: 0 auto;
+}
+.main .charts {
+  width: 19rem;
+  display: block;
+  margin: 0 auto 6.4rem;
+}
+.main .title {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  text-align: center;
+  color: var(--third-color);
+  margin-bottom: 2.4rem;
+}
+.main .text-content {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--fifth-color);
+  line-height: 2.6rem;
+  margin-bottom: 2.4rem;
+}
+.main .button {
+  background-color: var(--first-color);
+  color: var(--white);
+  box-shadow: 0 0.5rem 2rem var(--second-color);
+  margin-bottom: 10rem;
+}
+.main .button:hover {
+  background-color: var(--second-color);
+}
+.main .cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3.2rem;
+  margin-bottom: 10rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .main {
+    padding: 0 3.9rem 10rem;
+    background: url("../assets/home/bg-pattern-footer.svg") no-repeat 50%
+        99.7rem / 148rem,
+      linear-gradient(transparent 50.5%, var(--fourth-color) 50.5%);
+  }
+  .first-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 9rem;
+  }
+  .first-section .charts {
+    width: 28.1rem;
+    margin: 0 0 0 auto;
+  }
+  .first-section .section-text {
+    flex: 0.83;
+    margin-bottom: 5rem;
+  }
+  .first-section .title,
+  .first-section .text-content {
+    text-align: left;
+  }
+  .first-section .button {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .main .cards-container {
+    row-gap: 2.4rem;
+  }
+}
+
+/* Desktop - Widescreen */
+@media (min-width: 1440px) {
+  .main {
+    padding: 0 16.5rem 9.1rem;
+    background: none;
+  }
+  .first-section {
+    margin-bottom: 12rem;
+  }
+  .first-section .section-text {
+    flex: 0.87;
+  }
+  .first-section .title {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+  }
+  .first-section .charts {
+    width: 50rem;
+  }
+  .section-text .text-content {
+    font-size: 1.8rem;
+    margin-bottom: 3.2rem;
+  }
+  .main .cards-container {
+    row-gap: 0;
+    flex-direction: row;
+    column-gap: 3rem;
+    margin-bottom: 8.2rem;
+  }
+}

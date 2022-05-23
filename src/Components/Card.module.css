@@ -1,0 +1,128 @@
+.card {
+  height: 30.8rem;
+  width: 100%;
+  background-color: var(--first-color);
+  border-radius: 1.3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+.plan-type {
+  color: var(--white);
+  margin-bottom: 4rem;
+}
+.plan-price {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  color: var(--white);
+  margin-bottom: 5.6rem;
+}
+.plan-list-features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.plan-list-features li {
+  font-size: 1.6rem;
+  color: var(--white);
+}
+.plan-list-features li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+.plan-list-features li:last-child {
+  margin-bottom: 3.2rem;
+}
+.button {
+  background-color: var(--white);
+  color: var(--first-color);
+}
+.button:hover {
+  background-color: var(--first-color-button-hover);
+}
+/* Card Plan Type Pro */
+.plan-type-pro {
+  background: url("") no-repeat 50% -37.5rem,
+    var(--white);
+}
+.plan-type-pro .plan-type,
+.plan-type-pro .plan-price,
+.plan-type-pro .plan-text,
+.plan-type-pro .plan-list-features li {
+  color: var(--white);
+}
+.plan-type-pro .plan-list-features li {
+  opacity: 0.75;
+}
+.plan-type-pro .button {
+  background-color: var(--white);
+}
+.plan-type-pro .button:hover {
+  filter: brightness(150%);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .card {
+    height: 31.6rem;
+    padding: 4.8rem;
+    display: grid;
+    grid-template-columns: 58% 42%;
+    text-align: left;
+    align-content: center;
+  }
+  .plan-type {
+    margin-bottom: 1.6rem;
+    grid-column: 1 / 2;
+  }
+  .plan-price {
+    grid-column: 1 / 2;
+    margin-bottom: 1rem;
+  }
+  .plan-text {
+    grid-column: 1 / 2;
+    margin-bottom: 2.4rem;
+  }
+  .plan-list-features {
+    margin-top: 1.7rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+  }
+  .card .button {
+    grid-column: 1 / 2;
+    margin-left: 0;
+  }
+  .plan-type-pro {
+    background-position: -32rem 50%;
+  }
+}
+
+/* Desktop - Widescreen */
+@media (min-width: 1440px) {
+  .card {
+    height: 35.8rem;
+    padding: 4rem 6.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .plan-type {
+    margin-bottom: 4rem;
+  }
+  .plan-text {
+    margin-bottom: 5.6rem;
+  }
+  .plan-list-features {
+    margin-top: 0rem;
+  }
+  .card .button {
+    margin: 0 auto;
+  }
+  .plan-type-pro {
+    background-position: 50% -37.5rem;
+  }
+}

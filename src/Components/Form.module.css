@@ -1,0 +1,8 @@
+.form {
+  margin: 0 auto;
+  padding: 2.4rem;
+  background-color: var(--white);
+  height: 46.5rem;
+  width: 32.7rem;
+  border-radius: 1.3rem;
+}

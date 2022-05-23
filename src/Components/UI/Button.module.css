@@ -1,0 +1,14 @@
+.button {
+  height: 5.6rem;
+  width: 17.1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Kumbh Sans", sans-serif;
+  border: none;
+  border-radius: 2.8rem;
+  display: block;
+  margin: 0 auto;
+}
+.button:hover {
+  cursor: pointer;
+}

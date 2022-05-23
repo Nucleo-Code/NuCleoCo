@@ -1,0 +1,39 @@
+.container {
+  background: url("./assets/home/bg-pattern-header.svg") no-repeat 50% -17rem/
+    45.8rem;
+  background-color: var(--bg-color-top);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    background-position: 40.8rem -15rem;
+    background-size: 66.6rem;
+  }
+  .bg-signup {
+    background-image: none;
+  }
+}
+
+/* Desktop - Widescreen */
+@media (min-width: 1440px) {
+  .container {
+    background-size: 113.4rem;
+    background-position: calc(50% + 49.3rem) -44rem;
+  }
+  .home-container {
+    background: url("./assets/home/bg-pattern-footer.svg") no-repeat
+        calc(50% - 40rem) 55rem / 203.6rem,
+      linear-gradient(transparent 66%, var(--fourth-color) 66%);
+  }
+  .signup-container {
+    background: url("./assets/sign-up/bg-pattern-side.svg") no-repeat
+        calc(50% + 53rem) -71.5rem/ 185rem,
+      linear-gradient(
+        to right,
+        transparent calc(50% + 30rem),
+        var(--fourth-color) calc(50% + 30rem)
+      );
+    height: 100vh;
+  }
+}

@@ -1,0 +1,32 @@
+.header {
+  padding: 4.6rem 0 8rem;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+.logo {
+  height: 3rem;
+  width: 15.5rem;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .header {
+    padding: 7.2rem 0 10.4rem;
+  }
+  .logo {
+    margin-left: 3.9rem;
+  }
+}
+
+/* Desktop - Widescreen */
+@media (min-width: 1440px) {
+  .header {
+    padding: 8.1rem 0 10.2rem;
+  }
+  .logo {
+    margin-left: 16.5rem;
+  }
+}

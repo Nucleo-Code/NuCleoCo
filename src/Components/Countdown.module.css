@@ -1,0 +1,107 @@
+.countdown-container {
+  text-align: center;
+}
+.countdown-container h3 {
+  color: var(--white);
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+.countdown-container h3 span {
+  color: var(--first-color);
+}
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.3rem;
+  margin-bottom: 3.2rem;
+}
+.countdown-square {
+  background-color: var(--third-color);
+  height: 9.2rem;
+  width: 7.2rem;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.countdown-square .number,
+.countdown-square .text {
+  color: var(--white);
+  font-weight: 700;
+}
+.countdown-square .number {
+  font-size: 3.2rem;
+}
+.countdown-square .text {
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+.countdown-container .button {
+  background-color: var(--first-color);
+  color: var(--white);
+}
+.countdown-container .button:hover {
+  background-color: var(--second-color);
+}
+/* Sign up page */
+.sign-up {
+  margin-bottom: 6.4rem;
+}
+.sign-up h3 {
+  color: var(--third-color);
+}
+.sign-up .countdown-square {
+  background-color: var(--first-color-countdown-square);
+}
+.sign-up .number {
+  color: var(--first-color);
+}
+.sign-up .text {
+  color: var(--third-color);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .countdown-timer {
+    margin-bottom: 4.8rem;
+  }
+  .countdown-square {
+    height: 12.8rem;
+    width: 10rem;
+    border-radius: 1.3rem;
+    row-gap: 1rem;
+  }
+  .countdown-square .number {
+    margin-top: 1.2rem;
+    font-size: 5.6rem;
+  }
+  .countdown-square .text {
+    font-size: 1.6rem;
+  }
+  .sign-up {
+    margin-bottom: 10.4rem;
+  }
+}
+
+/* Desktop - Widescreen */
+@media (min-width: 1440px) {
+  .countdown-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: start;
+    margin-bottom: 0rem;
+  }
+  .countdown-container h3 {
+    text-align: left;
+  }
+  .countdown-timer {
+    margin-bottom: 0;
+    grid-column: 1 / 2;
+  }
+  .countdown-container .button {
+    margin: 0 0 0 auto;
+  }
+}
