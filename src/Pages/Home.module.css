@@ -9,7 +9,7 @@
 }
 .main .charts {
   width: 19rem;
-  display: none;
+  display: block;
   margin: 0 auto 6.4rem;
 }
 .main .title {
@@ -95,7 +95,7 @@
     line-height: 6.4rem;
   }
   .first-section .charts {
-    display: inline;
+   
     width: 50rem;
   }
   .section-text .text-content {
