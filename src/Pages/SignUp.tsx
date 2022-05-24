@@ -16,7 +16,7 @@ function SignUp() {
           Puedes contactarno para poder brindarte un servicio con exelencia y calidad de software
         </p>
         
-        <img className={classes.countdown} src={imgEmail} alt="Logo" width="60%"  />
+        <img className={classes.countdown} src={imgEmail} alt="Logo" width="80%"  />
     
         <div className={classes.form}>
           <Form />

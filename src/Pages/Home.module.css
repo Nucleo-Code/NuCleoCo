@@ -8,8 +8,8 @@
   margin: 0 auto;
 }
 .main .charts {
+  display: none;
   width: 19rem;
-  display: block;
   margin: 0 auto 6.4rem;
 }
 .main .title {
@@ -79,7 +79,7 @@
 }
 
 /* Desktop - Widescreen */
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .main {
     padding: 0 16.5rem 9.1rem;
     background: none;
@@ -95,7 +95,7 @@
     line-height: 6.4rem;
   }
   .first-section .charts {
-   
+    display: inline;
     width: 50rem;
   }
   .section-text .text-content {
