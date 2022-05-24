@@ -6,3 +6,114 @@
   width: 32.7rem;
   border-radius: 1.3rem;
 }
+.input-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--fifth-color-light);
+}
+.input-name,
+.input-email,
+.input-phone,
+.input-company {
+  width: 100%;
+  padding: 2.4rem 1.6rem;
+  border: none;
+  border-bottom: 0.1rem solid var(--fifth-color-light);
+  outline: none;
+  color: var(--third-color);
+}
+.input-name {
+  padding-top: 0;
+}
+.input-name,
+.input-email {
+  border: none;
+}
+.input-company {
+  margin-bottom: 4rem;
+}
+.cross-icon {
+  padding: 0 1.6rem;
+}
+.form input,
+.form input::placeholder {
+  font-size: 1.6rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.form input::placeholder {
+  color: var(--fifth-color-light);
+}
+.form .current-plan {
+  padding: 2rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid var(--fifth-color-light);
+  cursor: pointer;
+}
+.form .arrow {
+  transform: rotate(180deg);
+}
+.invalid-input {
+  border-color: var(--sixth-color);
+}
+.invalid-input input,
+.invalid-input input::placeholder {
+  color: var(--sixth-color);
+}
+.form .select-plan p {
+  color: var(--third-color);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.form .select-plan span {
+  color: var(--third-color-light);
+  margin-left: 0.8rem;
+}
+.form .button {
+  background-color: var(--first-color);
+  color: var(--white);
+  width: 100%;
+}
+.form .button:hover {
+  background-color: var(--second-color);
+}
+.form .plan-options {
+  position: absolute;
+  margin-top: 0.6rem;
+  background-color: var(--white);
+  border: 0.1rem solid var(--third-color-border-form);
+  border-radius: 0.8rem;
+  padding: 2.4rem 3.2rem;
+  width: 27.9rem;
+  cursor: pointer;
+  box-shadow: 0 1.5rem 2rem var(--box-shadow);
+}
+.form .plan-options .plan {
+  padding: 1.75rem 0;
+  border-bottom: 0.1rem solid var(--fifth-color-light-border-plan-options);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.plan:first-of-type {
+  padding-top: 0 !important;
+}
+.plan:last-of-type {
+  padding-bottom: 0 !important;
+  border: none !important;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .form {
+    padding: 4rem 4.3rem;
+    height: 50.8rem;
+    width: 44.5rem;
+    box-shadow: 0 1.5rem 5rem var(--box-shadow-form);
+  }
+  .form .plan-options {
+    padding: 2.4rem 3.2rem;
+    width: 35.9rem;
+  }
+}
