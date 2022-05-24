@@ -21,6 +21,11 @@
   margin-bottom: 6.4rem;
 }
 
+.main .countdown {
+  display: none;
+  grid-column: 1 / 2;
+}
+
 /* Tablet */
 @media (min-width: 768px) {
   .main {
@@ -32,6 +37,7 @@
     width: 56rem;
     margin: 0 auto 4rem;
   }
+
 }
 
 /* Desktop - Widescreen */
@@ -45,14 +51,12 @@
     justify-items: flex-start;
   }
   .main .title {
-    
     font-size: 5.6rem;
     text-align: left;
     grid-column: 1 / 2;
     margin-bottom: 0;
   }
   .main .text-content {
-    padding-top: 5px;
     font-size: 1.8rem;
     text-align: left;
     grid-column: 1 / 2;
@@ -60,7 +64,7 @@
     width: initial;
   }
   .main .countdown {
-   
+    display: inline;
     grid-column: 1 / 2;
   }
   .main .form {
