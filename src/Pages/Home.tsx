@@ -7,6 +7,7 @@ import Button from "../Components/UI/Button";
 import { useHistory } from "react-router-dom";
 import Header from "../Components/Header";
 import imgHeader from '../assets/home/Group_36.svg';
+import Footer from "../Components/Footer";
 function Home() {
   const history = useHistory();
 
@@ -62,7 +63,11 @@ function Home() {
           ))}
         </section>
         {/* <Countdown needButton={true} /> */}
+
+        
       </main>
+      <Footer />
+      
     </Fragment>
   );
 }
