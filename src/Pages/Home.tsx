@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import Header from "../Components/Header";
 import imgHeader from '../assets/home/Group_36.svg';
 import Footer from "../Components/Footer";
+import SecondSection from "../Components/SecondSection";
 function Home() {
   const history = useHistory();
 
@@ -40,16 +41,9 @@ function Home() {
             />
           </div>
         </section>
+        
         <section className={classes["cards-container"]}>
-          {cards.map((card, i) => (
-            <Card
-              key={i}
-              planType={card.planType}
-              planPrice={card.planPrice}
-              planText={card.planText}
-              planListFeatures={card.planListFeatures}
-            />
-          ))}
+        <SecondSection />
         </section>
         <section className={classes["cards-container"]}>
           {cards.map((card, i) => (
