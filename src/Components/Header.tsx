@@ -12,7 +12,6 @@ function Header() {
 
   return (
     <header className={classes.header}>
-      
       <img
         className={classes.logo}
         src={img}
@@ -20,12 +19,12 @@ function Header() {
         onClick={logoHandler}
       />
       <div className ={classes.headerright}>
-        <a href="#servicio"><b>Servicio</b></a>
-        <a></a>
-        <a href="#informacion"><b>Sobre nosotros</b></a>
-        <a></a>
-        <a href="#contacto"><b>Contactanos</b></a>
-        <a></a>
+        <li><a href="#" className={classes.divMenuLink}>Servicio</a></li>
+    
+        <li> <a href="#"  className={classes.divMenuLink}>Sobre nosotros</a></li>
+        
+        <li> <a href="#"  className={classes.divMenuLink}>Contactanos</a></li>
+       
       </div>   
     </header>
   );

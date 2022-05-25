@@ -14,21 +14,29 @@
 }
 
 .headerright{
-  display: left;
+  display: flex;
+  list-style: none;
+  font-weight: bold;
 }
 .headerright a {
   float: left;
   color: #6711AA;
   text-align: center;
-  padding: 40px;
   text-decoration: none;
   font-size: 18px; 
   /*line-height: 0px;*/
+  margin: 70px;
+}
+
+.divMenuLink{
+  padding: 8px 12px;
   border-radius: 4px;
 }
-.headerright a.active {
-  background-color: dodgerblue;
+
+.divMenuLink:hover {
+  background-color: #6711AA;
   color: white;
+  transition: .5s;
 }
 
 /* Tablet */
