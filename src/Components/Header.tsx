@@ -12,12 +12,21 @@ function Header() {
 
   return (
     <header className={classes.header}>
+      
       <img
         className={classes.logo}
         src={img}
         alt="logo"
         onClick={logoHandler}
       />
+      <div className ={classes.headerright}>
+        <a href="#servicio"><b>Servicio</b></a>
+        <a></a>
+        <a href="#informacion"><b>Sobre nosotros</b></a>
+        <a></a>
+        <a href="#contacto"><b>Contactanos</b></a>
+        <a></a>
+      </div>   
     </header>
   );
 }
