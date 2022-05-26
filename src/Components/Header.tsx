@@ -1,7 +1,10 @@
 import classes from "./Header.module.css";
 import { useHistory } from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import img from '../assets/home/Group_35.svg';
+import { createSolutionBuilderWithWatchHost } from "typescript";
+
 
 function Header() {
   const history = useHistory();
@@ -12,6 +15,8 @@ function Header() {
 
   return (
     <header className={classes.header}>
+      <script src="https://kit.fontawesome.com/03f47b868f.js" crossOrigin="anonymous"></script>
+      <button className={classes.toggle}><FontAwesomeIcon icon={faBars} /></button>
       <img
         className={classes.logo}
         src={img}
