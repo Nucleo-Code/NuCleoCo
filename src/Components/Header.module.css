@@ -49,6 +49,7 @@
   display: none;
 }
 
+
 /* Tablet */
 @media (max-width: 768px) {
   .header {
@@ -69,10 +70,16 @@
     left: 0;
     top: 225px;
     width: 100%;
-    padding: 0;
+    padding: 20px 0;
     /*para agregar una barra de scroll si hay mucho zoom*/
+    
     height: calc(100% - 225px);
     overflow-y: auto ;
+    /*
+    left: 100%;
+    transition: left 0.3s;
+    */
+    
   }
   .headerright a {
     float: left;
@@ -83,6 +90,14 @@
     /*line-height: 0px;*/
     margin: 20px;
   }
+  .divMenuLink:hover {
+    background: none;
+    color: #3D0767; 
+  }
+  .toggle{
+    display: block;
+  }
+  
 }
 
 /* Desktop - Widescreen */

@@ -12,11 +12,14 @@ function Header() {
   const logoHandler = () => {
     history.push("/");
   };
+  function accionBoton(){
+    console.log("Hola mundo")
+  }
 
   return (
     <header className={classes.header}>
       <script src="https://kit.fontawesome.com/03f47b868f.js" crossOrigin="anonymous"></script>
-      <button className={classes.toggle}><FontAwesomeIcon icon={faBars} /></button>
+      <button onClick={()=>accionBoton()} className={classes.toggle}><FontAwesomeIcon icon={faBars} /></button>
       <img
         className={classes.logo}
         src={img}
@@ -29,7 +32,6 @@ function Header() {
         <li> <a href="#"  className={classes.divMenuLink}>Sobre nosotros</a></li>
         
         <li> <a href="#"  className={classes.divMenuLink}>Contactanos</a></li>
-       
       </div>   
     </header>
   );
