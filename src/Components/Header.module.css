@@ -47,6 +47,7 @@
   padding: 0 20px;
   line-height: 60px;
   display: none;
+  cursor: pointer;
 }
 
 
@@ -75,10 +76,10 @@
     
     height: calc(100% - 225px);
     overflow-y: auto ;
-    /*
+    
     left: 100%;
     transition: left 0.3s;
-    */
+    
     
   }
   .headerright a {
